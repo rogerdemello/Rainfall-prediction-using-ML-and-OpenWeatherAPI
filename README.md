@@ -15,14 +15,17 @@ React frontend for easy interaction and visualization of results.
 Modular design allows easy model updates or API extensions.
 
 
-##Getting Started
+
+## Getting Started
+
 *Prerequisites:*
 
-Python 3.8+
+    Python 3.8+
 
     Node.js 16+ and npm or yarn (for frontend)
 
 An [OpenWeather API KEY](https://openweathermap.org/api)
+
 
 
 *Backend Setup*
@@ -76,6 +79,8 @@ Start the React development server:
     yarn start
 
 The frontend will run on http://localhost:3000
+
+
 
 *Usage*
 
