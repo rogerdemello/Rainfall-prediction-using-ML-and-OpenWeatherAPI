@@ -1,38 +1,61 @@
+/* App container */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  transition: background 0.5s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Clear sky */
+.clear-bg {
+  background: linear-gradient(to bottom, rgba(135,206,250,0.6), rgba(255,255,255,0.8)),
+              url('https://static.vecteezy.com/system/resources/previews/004/351/372/large_2x/clear-blue-sky-background-free-photo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Foggy */
+.foggy-bg {
+  background: linear-gradient(to bottom, rgba(240,240,240,0.8), rgba(200,200,200,0.6)),
+              url('https://as1.ftcdn.net/v2/jpg/02/17/71/41/1000_F_217714174_BDxGVFQQ5MzZuMreV9bMDP02sqnpfHzY.jpg');
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rainy */
+.rainy-bg {
+  background: linear-gradient(to bottom, rgba(80,90,100,0.7), rgba(50,60,70,0.8)),
+              url('https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Snowy */
+.snowy-bg {
+  background: linear-gradient(to bottom, rgba(224,247,250,0.6), rgba(178,235,242,0.7)),
+              url('https://www.transparenttextures.com/patterns/snowflakes.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+/* Cloudy */
+.cloudy-bg {
+  background: linear-gradient(to bottom, rgba(161,196,253,0.6), rgba(194,233,251,0.6)),
+              url('https://www.transparenttextures.com/patterns/clouds.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
 }
